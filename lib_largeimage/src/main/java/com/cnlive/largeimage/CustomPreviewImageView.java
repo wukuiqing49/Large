@@ -159,7 +159,7 @@ public class CustomPreviewImageView extends LinearLayout {
             gif.setVisibility(View.GONE);
             preview.setVisibility(GONE);
             errImg.setVisibility(GONE);
-            largeImageView.setVisibility(View.VISIBLE);
+
             largeImageView.setImage(new FileBitmapDecoderFactory(file));
 
             largeImageView.setOnLongClickListener(new OnLongClickListener() {
@@ -176,7 +176,7 @@ public class CustomPreviewImageView extends LinearLayout {
                     clickLisetner.click();
                 }
             });
-
+            largeImageView.setVisibility(View.VISIBLE);
             largeImageView.setOnImageLoadListener(new BlockImageLoader.OnImageLoadListener() {
                 @Override
                 public void onBlockImageLoadFinished() {
@@ -190,7 +190,8 @@ public class CustomPreviewImageView extends LinearLayout {
 
                 @Override
                 public void onLoadFail(Exception e) {
-
+                    largeImageView.setVisibility(View.GONE);
+                    errImg.setVisibility(View.VISIBLE);
                 }
             });
 
