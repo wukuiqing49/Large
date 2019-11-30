@@ -7,7 +7,7 @@
     1: CustomPreviewImageView 支持展示gif格式和一般图片链接格式
     2:LargeImageView   支持bitmap和file文件的放大缩小展示方法是(setImage)
 
-CustomPreviewImageView:
+LargeImageView :
 
 ```
     /**
@@ -32,8 +32,8 @@ CustomPreviewImageView:
 
 ```
 
-LargeImageView :
 
+CustomPreviewImageView:
 ```
      
 
@@ -55,6 +55,9 @@ CustomPreviewImageView largeImageView = findViewById(R.id.largeView);
 
 
 ```
+
+
+
 
 
 
