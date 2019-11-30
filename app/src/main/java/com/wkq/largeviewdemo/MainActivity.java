@@ -7,6 +7,7 @@ import android.widget.Toast;
 import com.cnlive.largeimage.CustomPreviewClickListener;
 import com.cnlive.largeimage.CustomPreviewImageView;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         CustomPreviewImageView largeImageView = findViewById(R.id.largeView);
-        largeImageView.setImageView("http://img0.imgtn.bdimg.com/it/u=3577340855,977795531&fm=26&gp=0.jpg", "");
-//        largeImageView.setImageView("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559717106052&di=dda3dc390234e93ecd62a691e2b222bc&imgtype=0&src=http%3A%2F%2Fpic37.nipic.com%2F20140113%2F8800276_184927469000_2.png", "");
+//        largeImageView.setImageView("http://img0.imgtn.bdimg.com/it/u=3577340855,977795531&fm=26&gp=0.jpg", "");
+        largeImageView.setImageView("http://img.sccnn.com/bimg/326/203.jpg", "");
         largeImageView.setClickLisetner(new CustomPreviewClickListener() {
             @Override
             public void longClick(String file) {
