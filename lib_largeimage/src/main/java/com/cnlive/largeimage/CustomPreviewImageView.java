@@ -143,8 +143,10 @@ public class CustomPreviewImageView extends LinearLayout {
                             long differenceTime = System.currentTimeMillis() - downTime;
                             if (!isDouble) {
                                 if (differenceTime > 500) {
+                                    if (clickLisetner!=null)
                                     clickLisetner.longClick(file);
                                 } else {
+                                    if (clickLisetner!=null)
                                     clickLisetner.click();
                                 }
                             }
@@ -165,6 +167,7 @@ public class CustomPreviewImageView extends LinearLayout {
             largeImageView.setOnLongClickListener(new OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View view) {
+                    if (clickLisetner!=null)
                     clickLisetner.longClick(file);
                     return false;
                 }
@@ -173,6 +176,8 @@ public class CustomPreviewImageView extends LinearLayout {
                 @Override
                 public void onClick(View v) {
                     if (DoublePressed.onDoublePressed()) return;
+                    if (clickLisetner!=null)
+
                     clickLisetner.click();
                 }
             });
@@ -209,6 +214,7 @@ public class CustomPreviewImageView extends LinearLayout {
         root.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (clickLisetner!=null)
                 clickLisetner.click();
             }
         });

@@ -13,6 +13,7 @@
     <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
 
     <application
+        android:networkSecurityConfig="@xml/network_security_config"
         android:allowBackup="true"
         android:name=".App"
         android:icon="@mipmap/ic_launcher"

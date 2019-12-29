@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         CustomPreviewImageView largeImageView = findViewById(R.id.largeView);
 //        largeImageView.setImageView("http://img0.imgtn.bdimg.com/it/u=3577340855,977795531&fm=26&gp=0.jpg", "");
-        largeImageView.setImageView("http://img.sccnn.com/bimg/326/203.jpg", "");
+        largeImageView.setImageView("https://image.tmdb.org/t/p/w200//dCB7d4l0mfpsISZvr6aPE2z5QF6.jpg", "");
         largeImageView.setClickLisetner(new CustomPreviewClickListener() {
             @Override
             public void longClick(String file) {
