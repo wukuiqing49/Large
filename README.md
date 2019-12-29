@@ -1,7 +1,7 @@
 # largeview
 **这是一个图片放大缩小以及展示gif的展示库**
 
-集成方式  :  implementation 'com.github.wukuiqing49:Large:1.0.91'
+集成方式  :  implementation 'com.github.wukuiqing49:Large:1.0.1.0'
 
 实例展示: 
     1: CustomPreviewImageView 支持展示gif格式和一般图片链接格式
